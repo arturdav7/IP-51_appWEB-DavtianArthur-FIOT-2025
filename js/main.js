@@ -63,28 +63,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Початковий стан при завантаженні сторінки
   updateActiveByScroll();
-
 });
 
-/* =========================
-   Legends – typography
-   ========================= */
-
-.legend-body p{
-  font-size: 1.05rem;      /* было ~1rem */
-  line-height: 1.75;
-}
-
-.legend-body ul{
-  margin-top: 14px;
-}
-
-.legend-body li{
-  font-size: 1.02rem;
-  line-height: 1.65;
-}
-
-.legend-body h3{
-  font-size: 1.25rem;
-  margin-bottom: 10px;
-}
