@@ -271,22 +271,6 @@ code{
 
 .btn:active{ transform: translateY(0); }
 
-/* (Опційно) маленький “м’яч” біля заголовка */
-.ball{
-  display:inline-block;
-  width:18px;
-  height:18px;
-  margin-right:10px;
-  border-radius:50%;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255,255,255,.95), rgba(255,255,255,.55)),
-    radial-gradient(circle at 55% 60%, rgba(15,23,42,.35) 0 35%, transparent 36%),
-    radial-gradient(circle at 40% 45%, rgba(15,23,42,.25) 0 22%, transparent 23%),
-    radial-gradient(circle at 70% 35%, rgba(15,23,42,.18) 0 18%, transparent 19%);
-  box-shadow:0 10px 18px rgba(2,6,23,.18);
-  transform: translateY(2px);
-}
-
 /* =========================
    7) Achievements (Cards)
    ========================= */
@@ -309,7 +293,6 @@ code{
   position:relative;
   overflow:hidden;
 
-  /* щоб курсор не ставав “як для тексту” */
   cursor: default;
   user-select: none;
 
@@ -451,9 +434,6 @@ textarea:focus-visible{
   outline-offset:2px;
 }
 
-/* =========================
-   12) Optional: Scroll reveal
-   ========================= */
 .reveal{
   opacity:0;
   transform: translateY(10px);
@@ -482,9 +462,8 @@ textarea:focus-visible{
   section.container{ margin-top:14px; }
 }
 
-/* Fix anchor scroll offset because header is sticky */
 section[id]{
-  scroll-margin-top: 110px; /* под высоту шапки */
+  scroll-margin-top: 110px;
 }
 
 /* =========================
